@@ -1,0 +1,58 @@
+.header {
+  margin: auto 30px;
+  box-shadow: 0px 10px 15px -15px rgba(0,0,0,0.2);
+}
+
+.header-contacts {
+  display: flex;
+  justify-content: space-between;
+
+  margin-top: 10px;
+}
+
+.header-contacts__title-description {
+  color: $additional-text-color;
+  font-size: 16px;
+  text-align: center;
+}
+
+.header-contacts__adress-title,
+.header-contacts__work-time-title {
+  color: $orange;
+}
+
+.header-contacts__adress-description {
+  display: block;
+
+  color: $main-text-color;
+  &:hover {
+    color: $orange;
+  }
+  &:active {
+    color: $light-orange;
+  }
+}
+
+.main-nav {
+  display: flex;
+  justify-content: space-between;
+
+  margin-top: 30px;
+  padding-bottom: 10px;
+}
+
+.main-nav .current {
+  color: $orange;
+}
+
+.main-nav__main-nav-item-link {
+  color: $main-text-color;
+  text-transform: uppercase;
+  font-size: 22px;
+  &:hover {
+    color: $orange;
+  }
+  &:active {
+    color: $light-orange;
+  }
+}

@@ -1,0 +1,16 @@
+@import "./utils/reset.scss";
+@import "./utils/visually-hidden.scss";
+@import "./utils/fonts.scss";
+@import "./utils/vars.scss";
+@import "./utils/scroll.scss";
+@import "./blocks/header.scss";
+@import "./blocks/description-advantages.scss";
+@import "./blocks/footer.scss";
+@import "./blocks/about-us-content.scss";
+
+body {
+  font-family: "play", sans-serif;
+  font-size: 20px;
+  color: $main-text-color;
+  @include custom-scroll-bar;
+}
