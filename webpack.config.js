@@ -125,6 +125,19 @@ module.exports = {
             }
           }
         ]
+      },
+      {
+        // postcss
+        test: /\.scss$/,
+        use: [
+          {
+            loader: "postcss-loader",
+            options: {
+              sourceMap: true,
+              config: { path: `./postcss.config.js` }
+            }
+          }
+        ]
       }
     ]
   }
