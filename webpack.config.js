@@ -32,7 +32,7 @@ module.exports = {
   entry: "./index.js",
   output: {
     filename: "[name].js",
-    path: path.resolve(__dirname, "dist")
+    path: path.resolve(__dirname, "docs")
   },
   optimization: optimization(),
   devServer: {
@@ -79,7 +79,7 @@ module.exports = {
     new CopyWebpackPlugin([
       {
         from: path.resolve(__dirname, "src/img/"),
-        to: path.resolve(__dirname, "dist/img/")
+        to: path.resolve(__dirname, "docs/img/")
       }
     ]),
     new MiniCssExtractPlugin({
@@ -116,13 +116,12 @@ module.exports = {
         ]
       },
       {
-        test: /\.(woff(2)?|ttf|eot|svg)(\?v=\d+\.\d+\.\d+)?$/,
+        test: /\.(png|jpg|gif|woff(2)?|ttf|eot|svg)$/,
         use: [
           {
             loader: "file-loader",
             options: {
-              name: "[name].[ext]",
-              outputPath: "fonts/"
+              name: "[path][name].[ext]"
             }
           }
         ]
