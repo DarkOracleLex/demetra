@@ -2,15 +2,30 @@
 @import "./utils/visually-hidden.scss";
 @import "./utils/fonts.scss";
 @import "./utils/vars.scss";
+@import "./utils/animate.scss";
 @import "./utils/scroll.scss";
 @import "./blocks/header.scss";
 @import "./blocks/description-advantages.scss";
 @import "./blocks/footer.scss";
-@import "./blocks/about-us-content.scss";
+@import "./blocks/content.scss";
 
 body {
   font-family: "play", sans-serif;
   font-size: 20px;
   color: $main-text-color;
+  min-width: 320px;
   @include custom-scroll-bar;
+}
+
+.page-top {
+  position: fixed;
+  margin-left: 2%;
+  bottom: 10px;
+  color: $main-text-color;
+  &:hover {
+    color: $orange;
+  }
+  &:active {
+    color: $light-orange;
+  }
 }
