@@ -1,6 +1,12 @@
 .content {
   padding: 0 10%;
-  min-height: 600px;
+  flex: 1 0 auto;
+}
+
+.content-contacts {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .content__main-title {
@@ -55,6 +61,14 @@
   }
 }
 
+.content__contacts-text-link {
+  color: $orange;
+
+  &:hover {
+    color: $light-orange;
+  }
+}
+
 .content__list {
   margin-top: 20px;
   margin-left: 0.5em;
@@ -91,4 +105,30 @@
   tr:hover {
     background-color: $light-orange;
   }
+}
+
+.content__contacts-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.content__contacts-inner {
+  background-color: #e8e8e8;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 5%;
+}
+
+.content__contacts-text {
+  margin: 20px 0;
+}
+
+.content__contacts-text-item {
+  display: block;
+  color: $orange;
+}
+
+.content__contacts-map {
+  margin: 80px 0;
 }

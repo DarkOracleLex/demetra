@@ -14,7 +14,10 @@ body {
   font-size: 20px;
   color: $main-text-color;
   min-width: 320px;
+  min-height: 100vh;
   @include custom-scroll-bar;
+  display: flex;
+  flex-direction: column;
 }
 
 .page-top {
