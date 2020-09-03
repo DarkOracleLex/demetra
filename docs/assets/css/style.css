@@ -3637,6 +3637,12 @@ th {
     justify-content: center;
 }
 
+@media (max-width: 900px) {
+    .content-contacts {
+        margin-bottom: 20px;
+    }
+}
+
 .content__main-title {
     position: relative;
     min-width: 200px;
@@ -3746,13 +3752,21 @@ th {
 
 .content__contacts-inner {
     background-color: #e8e8e8;
-    display: flex;
     justify-content: space-between;
+    display: flex;
     padding: 0 5%;
+}
+
+@media (max-width: 900px) {
+    .content__contacts-inner {
+        flex-direction: column;
+        align-items: center;
+    }
 }
 
 .content__contacts-text {
     margin: 20px 0;
+    text-align: center;
 }
 
 .content__contacts-text-item {
